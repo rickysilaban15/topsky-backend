@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only api/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/api/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
