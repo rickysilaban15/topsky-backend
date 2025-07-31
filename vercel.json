@@ -1,11 +1,9 @@
 {
-  "build": {
-    "env": {
-      "NODE_VERSION": "18"
-    }
-  },
-  "functions": {
-    "api/**/*.js": { "runtime": "node@18.x" },
-    "api/**/*.ts": { "runtime": "node@18.x" }
-  }
+  "version": 2,
+  "builds": [
+    { "src": "src/index.ts", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "src/index.ts" }
+  ]
 }
