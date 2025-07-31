@@ -10,9 +10,11 @@
   },
   "devDependencies": {
     "typescript": "^5.4.0",
-    "@types/node": "^20.4.2"
+    "@types/node": "^20.4.2",
+    "ts-node": "^10.9.1"
   },
   "scripts": {
+    "start": "ts-node api/index.ts",
     "build": "tsc --noEmit",
     "dev": "vercel dev"
   }
