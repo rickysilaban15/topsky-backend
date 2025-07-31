@@ -4,15 +4,17 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "googleapis": "^131.0.0",
-    "midtrans-client": "^1.4.3"
+    "esbuild": "^0.25.8",
+    "midtrans-client": "^1.4.3",
+    "path-to-regexp": "^8.2.0"
   },
   "devDependencies": {
     "typescript": "^5.4.0",
     "@types/node": "^20.4.2"
   },
   "scripts": {
-    "build": "tsc --noEmit",
-    "dev": "vercel dev"
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js"
   }
 }
