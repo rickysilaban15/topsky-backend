@@ -1,0 +1,19 @@
+{
+  "name": "topsky-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "googleapis": "^131.0.0",
+    "midtrans-client": "^1.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.4.2",
+    "@types/next": "^13.4.2"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "dev": "vercel dev"
+  }
+}
