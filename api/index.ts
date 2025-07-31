@@ -1,8 +1,11 @@
-import { Request, Response } from 'express';
+// api/index.ts
+import express from 'express';
+const app = express();
 
-export default function handler(req: Request, res: Response) {
-  res.status(200).json({
-    message: "🚀 TopSky Backend is running",
-    docs: "/api/health untuk cek status"
-  });
-}
+app.get('/', (req, res) => {
+  res.send('✅ API is working');
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
