@@ -13,9 +13,9 @@
     "@types/node": "^20.4.2",
     "@types/express": "^4.17.21"
   },
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "vercel dev"
-  }
+ "scripts": {
+  "start": "node api/index.js", 
+  "build": "tsc"
+}
+
 }
